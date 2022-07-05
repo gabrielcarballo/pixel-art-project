@@ -1,0 +1,43 @@
+.color {
+    border: black solid 1px;
+    width: 20%;
+    height: 100%;
+}
+
+#color-palette :nth-child(1){
+    background-color: black;
+}
+
+#color-palette :nth-child(2){
+    background-color: yellow;
+}
+
+#color-palette :nth-child(3){
+    background-color: violet;
+}
+
+#color-palette :nth-child(4){
+    background-color: red;
+}
+
+#color-palette {
+    height: 35px;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pixel-board {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: black solid 1px;
+    background-color: white;
+}
