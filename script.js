@@ -1,5 +1,17 @@
+let colors = document.getElementsByClassName('color');
+  
 
+function colorsRandomizer() {
+    for (let i = 1; i < colors.length; i++) {
+        let randomizer1 = Math.round(Math.random() * 200);
+        let randomizer2 = Math.round(Math.random() * 150);
+        let randomizer3 = Math.round(Math.random() * 212);
+        colors[i].style.backgroundColor = `rgb(${randomizer1}, ${randomizer2}, ${randomizer3})`
+    }
+    
+}
 
+colorsRandomizer();
 
 function renderizingPixels(num) {
     let contador = document.getElementsByClassName('pixels');
@@ -17,6 +29,8 @@ function renderizingPixels(num) {
 
 renderizingPixels(25);
 
+
+
 function gettingColor() {
     let palette = document.querySelectorAll('.color');
     for (let i = 0; i < palette.length; i++) {
@@ -33,6 +47,8 @@ function gettingColor() {
 
 gettingColor();
 
-function applyingColor() {
-
-}
+//function applyingColor() {
+   // let pixelBoard = document.getElementById('pixel-board');
+   // pixelBoard.addEventListener('click', function (event) {
+        
+//}

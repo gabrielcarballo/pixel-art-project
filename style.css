@@ -21,18 +21,6 @@ body {
     background-color: black;
 }
 
-#color-palette :nth-child(2){
-    background-color: yellow;
-}
-
-#color-palette :nth-child(3){
-    background-color: violet;
-}
-
-#color-palette :nth-child(4){
-    background-color: red;
-}
-
 #color-palette {
     height: 35px;
     width: 210px;
