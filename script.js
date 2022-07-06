@@ -17,27 +17,28 @@ colorsRandomizer();
 
 function generatingNewBoard() {
     let generateTrigger = document.getElementById('generate-board');
-    let reset = document.querySelector('.pixel');
-    let contador = document.querySelectorAll('.pixel')
     generateTrigger.addEventListener('click', () => {
         let generateAmount = document.getElementById('board-size').value
-        if (generateAmount > 50){
+        if (generateAmount > 50) {
             generateAmount = 50;
-        } else if (generateAmount < 5){
+        } else if (generateAmount < 5) {
             generateAmount = 5;
         }
-        while (contador !== 0){
-            reset.remove(1)
-        }
+        document.querySelector('#pixie-board').innerHTML = '';
         renderizingPixels(generateAmount);
     })
 }
 
-
+generatingNewBoard();
 
 function renderizingPixels(num) {
-    let contador = document.querySelectorAll('pixel');
-    if (num <= 50 && num > 0 && contador.length < 50) {
+    let contador = document.querySelectorAll('.pixel')
+    if (num >= 50) {
+        num = 50;
+    } else if (num < 5) {
+        num = 5;
+    }
+    else if (contador.length < 50) {
         for (let i = 0; i < num; i += 1) {
             let pixelBoard = document.getElementById('pixel-board');
             let colorBoard = document.createElement('div');
@@ -58,7 +59,6 @@ function gettingColor() {
     for (let i = 0; i < palette.length; i += 1) {
         let color = 'color';
         let selected = 'color selected'
-
         palette[i].addEventListener('click', () => {
             let got = document.querySelector('.selected');
             got.className = color;
