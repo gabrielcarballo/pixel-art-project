@@ -57,3 +57,25 @@ body {
     margin-top: 30px;
     cursor: pointer;
 }
+
+.gen {
+    margin-top: 25px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#board-size {
+    width: 25%;
+}
+
+#generate-board {
+    width: 40%;
+    height: 23px;
+    box-shadow: 4px 3px 18px 7px rgba(0, 0, 0, 0.36);
+    background-color: rgb(192, 41, 41);
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
