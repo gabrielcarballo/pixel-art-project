@@ -16,3 +16,23 @@ function renderizingPixels(num) {
 }
 
 renderizingPixels(25);
+
+function gettingColor() {
+    let palette = document.querySelectorAll('.color');
+    for (let i = 0; i < palette.length; i++) {
+        let color = 'color';
+        let selected = 'color selected'
+
+        palette[i].addEventListener('click', () => {
+            let got = document.querySelector('.selected');
+            got.className = color;
+            palette[i].className = selected;
+        })
+    }
+}
+
+gettingColor();
+
+function applyingColor() {
+
+}
