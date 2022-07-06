@@ -1,3 +1,16 @@
+body {
+    height: 768px;
+    width: 1366px;
+    display: flex;
+    justify-content: center;
+    background-color:darkseagreen;
+}
+
+.entire-content {
+    width: 300px;
+}
+    
+
 .color {
     border: black solid 1px;
     width: 20%;
@@ -22,17 +35,16 @@
 
 #color-palette {
     height: 35px;
-    width: 175px;
+    width: 210px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 28px;
 }
 
 #pixel-board {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-    background-color: white;
+    width: 80%;
+    margin: 40px 0 0 21px;
 }
 
 .pixel {
@@ -40,4 +52,5 @@
     height: 40px;
     border: black solid 1px;
     background-color: white;
+    display: inline-block;
 }
