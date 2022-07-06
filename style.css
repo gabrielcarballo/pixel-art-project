@@ -3,22 +3,20 @@ body {
     width: 1366px;
     display: flex;
     justify-content: center;
-    background-color:darkseagreen;
+    background-color: darkseagreen;
+    border-radius: 10px;
 }
 
 .entire-content {
     width: 300px;
 }
-    
+
 
 .color {
     border: black solid 1px;
     width: 20%;
     height: 100%;
-}
-
-#color-palette :nth-child(1){
-    background-color: black;
+    border-radius: 6px;
 }
 
 #color-palette {
@@ -27,7 +25,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 28px;
+    margin: 0 0 15px 28px;
 }
 
 #pixel-board {
@@ -41,4 +39,21 @@ body {
     border: black solid 1px;
     background-color: white;
     display: inline-block;
+    border-radius: 11px;
+    margin-right: 4px;
+}
+
+#clear-board {
+    box-shadow: 4px 3px 18px 7px rgba(0, 0, 0, 0.36);
+    background-color: rgb(192, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: black;
+    border-radius: 10px;
+    width: 150px;
+    height: 31px;
+    margin-left: 56px;
+    margin-top: 30px;
+    cursor: pointer;
 }

@@ -1,7 +1,8 @@
 let colors = document.getElementsByClassName('color');
   
-
+window.onload = document.getElementsByClassName('color')[0].classList.add('selected')
 function colorsRandomizer() {
+    colors[0].style.backgroundColor = `rgb(0, 0, 0)`
     for (let i = 1; i < colors.length; i++) {
         let randomizer1 = Math.round(Math.random() * 200);
         let randomizer2 = Math.round(Math.random() * 150);
@@ -62,3 +63,14 @@ function applyingColor() {
 
 applyingColor();
 
+function cleaningBoard() {
+    let pixelBoard = document.querySelectorAll('.pixel');
+    let cleaningButton = document.getElementById('clear-board');
+    cleaningButton.addEventListener('click', () => {
+        for (let i = 0; i < pixelBoard.length; i++){
+            pixelBoard[i].style.backgroundColor = 'white'
+        }
+    })
+}
+
+cleaningBoard();
