@@ -47,8 +47,18 @@ function gettingColor() {
 
 gettingColor();
 
-//function applyingColor() {
-   // let pixelBoard = document.getElementById('pixel-board');
-   // pixelBoard.addEventListener('click', function (event) {
-        
-//}
+function applyingColor() {
+    let pixelBoard = document.querySelectorAll('.pixel');
+    
+    for (let i = 0; i < pixelBoard.length; i++) {
+        pixelBoard[i].addEventListener('click', () => {
+            let appColor = document.querySelector('.selected');
+            pixelBoard[i].style.backgroundColor = appColor.style.backgroundColor
+
+
+        })
+    }
+}
+
+applyingColor();
+
