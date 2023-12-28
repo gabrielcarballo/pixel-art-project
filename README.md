@@ -1,6 +1,6 @@
 # Pixel Art Project - Week 3
 
-This project is a fun and interactive pixel art editor. Users can choose a color from a palette and paint on a white canvas, creating their own unique designs. This project is a demonstration of my skills in JavaScript, CSS, and HTML, learned at my Week 3 at my bootcamp at Trybe.
+This project is a fun and interactive pixel art editor. Users can choose a color from a palette and paint on a white canvas, creating their unique designs. This project demonstrates my skills in JavaScript, CSS, HTML, and DOM manipulation learned in Week 3 at my bootcamp at Trybe.
 
 ## Project Overview
 
